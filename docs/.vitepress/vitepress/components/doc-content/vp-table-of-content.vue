@@ -6,9 +6,9 @@ import { useActiveSidebarLinks } from '../../composables/active-bar'
 
 import sponsorLocale from '../../../i18n/component/sponsor.json'
 import { useLang } from '../../composables/lang'
-import SponsorsButton from '../sponsors/sponsors-button.vue'
-import SponsorRightTextList from '../sponsors/right-richtext-list.vue'
-import SponsorRightLogoSmallList from '../sponsors/right-logo-small-list.vue'
+// import SponsorsButton from '../sponsors/sponsors-button.vue'
+// import SponsorRightTextList from '../sponsors/right-richtext-list.vue'
+// import SponsorRightLogoSmallList from '../sponsors/right-logo-small-list.vue'
 import tag from '../../../plugins/tag'
 // import SponsorLarge from '../vp-sponsor-large.vue'
 
@@ -61,9 +61,9 @@ const sponsor = computed(() => sponsorLocale[lang.value])
       <p class="text-14px font-300 color-$text-color-secondary">
         {{ sponsor.sponsoredBy }}
       </p>
-      <sponsors-button class="sponsors-button mt-4 w-100%" />
+      <!-- <sponsors-button class="sponsors-button mt-4 w-100%" />
       <sponsor-right-logo-small-list />
-      <sponsor-right-text-list />
+      <sponsor-right-text-list /> -->
     </nav>
   </aside>
 </template>
