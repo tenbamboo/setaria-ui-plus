@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { useRouter } from 'vitepress'
 import { useTranslation } from '../../composables/translation'
+import { useBaseUrl } from '../../composables/base-url'
 
 const router = useRouter()
 const { switchLang, languageMap, langs, lang, locale } = useTranslation()
+const baseUrl = useBaseUrl()
 
 const toTranslation = () => {
-  router.go(`/${lang.value}/guide/translation`)
+  router.go(`${baseUrl.value}/guide/translation`)
 }
 </script>
 
@@ -39,6 +41,7 @@ const toTranslation = () => {
 
 <style lang="scss" scoped>
 @use '../../styles/mixins' as *;
+
 .translation-container {
   display: none;
   height: 24px;
@@ -67,6 +70,7 @@ const toTranslation = () => {
   .language {
     padding: 0 16px;
     line-height: 28px;
+
     &.selected {
       --el-text-color-regular: var(--brand-color);
     }

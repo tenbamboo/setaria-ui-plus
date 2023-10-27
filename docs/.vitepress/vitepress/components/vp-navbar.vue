@@ -22,7 +22,7 @@ const currentLink = computed(() => {
     return `/${page.value?.frontmatter?.lang || ''}/`
   }
   const existLangIndex = theme.value.langs.findIndex((lang) =>
-    window?.location?.pathname.startsWith(`/${lang}`)
+    window?.location?.pathname.includes(`/${lang}`)
   )
 
   return existLangIndex === -1 ? '/' : `/${theme.value.langs[existLangIndex]}/`
@@ -62,15 +62,18 @@ const currentLink = computed(() => {
   display: flex;
   align-items: center;
   height: var(--header-height);
+
   > a {
     height: 28px;
     width: 128px;
   }
+
   .logo {
     position: relative;
     height: 100%;
   }
 }
+
 .dark {
   .logo {
     filter: drop-shadow(2px 2px 6px #409eff);

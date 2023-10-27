@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vitepress'
-import { isActive } from '../../utils'
+import { isActiveLinkByIncludes } from '../../utils'
 
 import type { Link } from '../../types'
 
@@ -15,7 +15,9 @@ const sidebarItem = ref<HTMLElement>()
 
 const route = useRoute()
 
-const activeLink = computed<boolean>(() => isActive(route, props.item.link))
+const activeLink = computed<boolean>(() => {
+  return isActiveLinkByIncludes(route, props.item.link)
+})
 
 watch([activeLink, sidebarItem], ([active, el]) => {
   if (active && el) {

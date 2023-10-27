@@ -6,7 +6,8 @@
     "build": "NODE_ENV=production && vitepress build . && tsx .vitepress/build/rebuild-pwa.ts",
     "serve": "NODE_ENV=production vitepress serve . --port 5001",
     "gen-locale": "rimraf .vitepress/i18n && tsx .vitepress/build/crowdin-generate.ts",
-    "crowdin-credentials": "tsx .vitepress/build/crowdin-credentials.ts"
+    "crowdin-credentials": "tsx .vitepress/build/crowdin-credentials.ts",
+    "deploy": "gh-pages -d .vitepress/dist"
   },
   "dependencies": {
     "@docsearch/js": "^3.1.0",

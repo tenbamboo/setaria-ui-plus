@@ -3,12 +3,14 @@ import { useToggle } from '@vueuse/core'
 import VPLink from '../common/vp-link.vue'
 import { useTranslation } from '../../composables/translation'
 import ExpandIcon from '../icons/expand.vue'
+import { useBaseUrl } from '../../composables/base-url'
 
 const emit = defineEmits(['close'])
 
 const { languageMap, langs, lang, switchLang, locale } = useTranslation()
 
 const [show, toggle] = useToggle()
+const baseUrl = useBaseUrl()
 
 const onSwitchLang = (lang: string) => {
   switchLang(lang)
@@ -48,7 +50,7 @@ const onSwitchLang = (lang: string) => {
         {{ languageMap[l] }}
       </p>
       <p class="translation-item">
-        <VPLink :href="`/${lang}/guide/translation`">
+        <VPLink :href="`${baseUrl}/guide/translation`">
           {{ locale.help }}
         </VPLink>
       </p>
@@ -60,12 +62,14 @@ const onSwitchLang = (lang: string) => {
 .full-screen-translation {
   border-bottom: 1px solid var(--border-color);
 }
+
 .translation-toggler {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   line-height: 24px;
+
   .toggle-icon {
     transition: transform var(--el-transition-duration);
     transform: rotate(180deg);
@@ -78,6 +82,7 @@ const onSwitchLang = (lang: string) => {
 
 .translation-items {
   padding-bottom: 12px;
+
   .translation-item {
     cursor: pointer;
     margin: 0;

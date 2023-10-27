@@ -1,4 +1,5 @@
 export const defaultLang = 'zh-CN'
+export const BASE_URL = '/setaria-ui-plus'
 
 export const PREFERRED_LANG_KEY = 'preferred_lang'
 

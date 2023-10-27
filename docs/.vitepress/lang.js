@@ -17,8 +17,8 @@
       : defaultLang)
   localStorage.setItem(cacheKey, language)
   userPreferredLang = language
-  if (!location.pathname.startsWith(`/${userPreferredLang}`)) {
-    const toPath = [`/${userPreferredLang}`]
+  if (!location.pathname.startsWith(`/setaria-ui-plus/${userPreferredLang}`)) {
+    const toPath = [`/setaria-ui-plus/${userPreferredLang}`]
       .concat(location.pathname.split('/').slice(2))
       .join('/')
     location.pathname =

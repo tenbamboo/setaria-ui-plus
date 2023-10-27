@@ -1,8 +1,11 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useLang } from '../../composables/lang'
+import { useBaseUrl } from '../../composables/base-url'
+
 import homeLocale from '../../../i18n/pages/home.json'
 const lang = useLang()
+const baseUrl = useBaseUrl()
 
 const homeLang = computed(() => homeLocale[lang.value])
 </script>
@@ -15,7 +18,7 @@ const homeLang = computed(() => homeLocale[lang.value])
           <guide-svg w="40" m="y-12" />
           <h3>{{ homeLang['3'] }}</h3>
           <p>{{ homeLang['4'] }}</p>
-          <a :href="`/${lang}/guide/design.html`">{{ homeLang['5'] }}</a>
+          <a :href="`${baseUrl}/guide/design.html`">{{ homeLang['5'] }}</a>
         </div>
       </li>
       <li>
@@ -23,7 +26,7 @@ const homeLang = computed(() => homeLocale[lang.value])
           <component-svg w="40" m="y-12" />
           <h3>{{ homeLang['6'] }}</h3>
           <p>{{ homeLang['7'] }}</p>
-          <a :href="`/${lang}/component/layout.html`">
+          <a :href="`${baseUrl}/component/layout.html`">
             {{ homeLang['5'] }}
           </a>
         </div>
@@ -33,7 +36,7 @@ const homeLang = computed(() => homeLocale[lang.value])
           <resource-svg w="40" m="y-12" />
           <h3>{{ homeLang['8'] }}</h3>
           <p>{{ homeLang['9'] }}</p>
-          <a :href="`/${lang}/resource/index.html`"> {{ homeLang['5'] }} </a>
+          <a :href="`${baseUrl}/resource/index.html`"> {{ homeLang['5'] }} </a>
         </div>
       </li>
     </ul>
@@ -50,11 +53,13 @@ const homeLang = computed(() => homeLocale[lang.value])
       padding: 0;
       margin: 0 -11px;
       width: auto;
+
       &::before,
       &::after {
         display: table;
         content: '';
       }
+
       &::after {
         clear: both;
       }
@@ -73,6 +78,7 @@ const homeLang = computed(() => homeLocale[lang.value])
       height: 120px;
     }
   }
+
   .card {
     height: 430px;
     width: 100%;
@@ -93,18 +99,21 @@ const homeLang = computed(() => homeLocale[lang.value])
     img {
       margin: 48px auto;
     }
+
     h3 {
       margin: 0;
       font-size: 18px;
       color: var(--el-text-color-primary);
       font-weight: normal;
     }
+
     p {
       font-size: 14px;
       color: #99a9bf;
       padding: 0 25px;
       line-height: 20px;
     }
+
     a {
       height: 53px;
       line-height: 52px;
@@ -130,23 +139,28 @@ const homeLang = computed(() => homeLocale[lang.value])
         background: var(--brand-color);
       }
     }
+
     &:hover {
       bottom: 6px;
       // box-shadow: 0 6px 18px 0 rgba(232, 237, 250, 0.5);
     }
   }
+
   @media (max-width: 1140px) {
     .cards {
       width: 100%;
+
       .container {
         width: 100%;
         margin: 0;
       }
     }
+
     .banner .container {
       width: 100%;
       box-sizing: border-box;
     }
+
     .banner img {
       right: 0;
     }

@@ -56,6 +56,10 @@ export const isActiveLink = (
   return regex.test(normalize(`/${route.data.relativePath}`))
 }
 
+export const isActiveLinkByIncludes = (route: Route, path: string) => {
+  return path.includes(normalize(`/${route.data.relativePath}`))
+}
+
 export function createGitHubUrl(
   docsRepo: string,
   docsDir: string,

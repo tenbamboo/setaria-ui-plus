@@ -45,6 +45,8 @@ export const config: UserConfig = {
   title: 'Element Plus',
   description: 'a Vue 3 based component library for designers and developers',
   lastUpdated: true,
+  // base: process.env.NODE_ENV === 'production' ? '/setaria-ui-plus' : '/',
+  base: '/setaria-ui-plus',
   head,
   themeConfig: {
     repo: REPO_PATH,
