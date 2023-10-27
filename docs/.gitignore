@@ -1,6 +1,6 @@
 .vitepress/i18n/*
-.vitepress/crowdin/*
-!.vitepress/crowdin/en-US
+# .vitepress/crowdin/*
+# !.vitepress/crowdin/en-US
 
 temp
 fr-FR
