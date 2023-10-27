@@ -49,6 +49,15 @@
       }
     ]
   },
+  "test": {
+    "text": "测试组件",
+    "children": [
+      {
+        "link": "/hello-would",
+        "text": "Hello would"
+      }
+    ]
+  },
   "configuration": {
     "text": "配置组件",
     "children": [

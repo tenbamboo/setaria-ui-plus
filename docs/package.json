@@ -36,6 +36,7 @@
     "consola": "^2.15.3",
     "escape-html": "^1.0.3",
     "fast-glob": "^3.2.11",
+    "gh-pages": "^6.0.0",
     "markdown-it-container": "^3.0.0",
     "octokit": "^2.0.3",
     "prismjs": "^1.28.0",

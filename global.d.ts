@@ -36,6 +36,7 @@ declare module '@vue/runtime-core' {
     ElDropdownItem: typeof import('element-plus')['ElDropdownItem']
     ElDropdownMenu: typeof import('element-plus')['ElDropdownMenu']
     ElEmpty: typeof import('element-plus')['ElEmpty']
+    ElHelloWould: typeof import('element-plus')['ElHelloWould']
     ElFooter: typeof import('element-plus')['ElFooter']
     ElForm: typeof import('element-plus')['ElForm']
     ElFormItem: typeof import('element-plus')['ElFormItem']

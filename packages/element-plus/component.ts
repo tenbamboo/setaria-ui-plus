@@ -46,6 +46,7 @@ import {
   ElDropdownMenu,
 } from '@element-plus/components/dropdown'
 import { ElEmpty } from '@element-plus/components/empty'
+import { ElHelloWould } from '@element-plus/components/hello-would'
 import { ElForm, ElFormItem } from '@element-plus/components/form'
 import { ElIcon } from '@element-plus/components/icon'
 import { ElImage } from '@element-plus/components/image'
@@ -149,6 +150,7 @@ export default [
   ElDropdownItem,
   ElDropdownMenu,
   ElEmpty,
+  ElHelloWould,
   ElForm,
   ElFormItem,
   ElIcon,
