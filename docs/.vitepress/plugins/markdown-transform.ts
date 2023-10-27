@@ -43,7 +43,7 @@ export function MarkdownTransform(): Plugin {
       code = transformVpScriptSetup(code, append)
 
       if (compPaths.some((compPath) => id.startsWith(compPath))) {
-        code = transformComponentMarkdown(id, componentId, code, append)
+        code = transformComponentMarkdown(id, componentId, code)
       }
 
       return combineMarkdown(
@@ -98,8 +98,8 @@ const GITHUB_TREE_URL = `https://github.com/${REPO_PATH}/tree/${REPO_BRANCH}`
 const transformComponentMarkdown = (
   id: string,
   componentId: string,
-  code: string,
-  append: Append
+  code: string
+  // append: Append
 ) => {
   const lang = getLang(id)
   const docUrl = `${GITHUB_BLOB_URL}/${docsDirName}/en-US/component/${componentId}.md`
@@ -122,12 +122,12 @@ const transformComponentMarkdown = (
 
 ${linksText}`
 
-  const contributorsSection = `
-## ${footerLocale[lang].contributors}
+  //   const contributorsSection = `
+  // ## ${footerLocale[lang].contributors}
 
-<Contributors id="${componentId}" />`
+  // <Contributors id="${componentId}" />`
 
-  append.footers.push(sourceSection, isComponent ? contributorsSection : '')
+  //   append.footers.push(sourceSection, isComponent ? contributorsSection : '')
 
   return code
 }
