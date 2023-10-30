@@ -1,2 +1,2 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/rate.scss'
+import '@setaria-ui-plus/components/base/style'
+import '@setaria-ui-plus/theme-chalk/src/rate.scss'

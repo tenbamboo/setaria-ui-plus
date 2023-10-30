@@ -1,3 +1,3 @@
-import '@element-plus/components/select/style'
-import '@element-plus/components/tree/style'
-import '@element-plus/theme-chalk/src/tree-select.scss'
+import '@setaria-ui-plus/components/select/style'
+import '@setaria-ui-plus/components/tree/style'
+import '@setaria-ui-plus/theme-chalk/src/tree-select.scss'

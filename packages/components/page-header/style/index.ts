@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/components/divider/style'
-import '@element-plus/theme-chalk/src/page-header.scss'
+import '@setaria-ui-plus/components/base/style'
+import '@setaria-ui-plus/components/divider/style'
+import '@setaria-ui-plus/theme-chalk/src/page-header.scss'

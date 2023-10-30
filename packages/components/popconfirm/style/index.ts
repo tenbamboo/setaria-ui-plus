@@ -1,4 +1,4 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/popconfirm.scss'
-import '@element-plus/components/popover/style'
-import '@element-plus/components/button/style'
+import '@setaria-ui-plus/components/base/style'
+import '@setaria-ui-plus/theme-chalk/src/popconfirm.scss'
+import '@setaria-ui-plus/components/popover/style'
+import '@setaria-ui-plus/components/button/style'

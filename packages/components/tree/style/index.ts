@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/tree.scss'
-import '@element-plus/components/checkbox/style'
+import '@setaria-ui-plus/components/base/style'
+import '@setaria-ui-plus/theme-chalk/src/tree.scss'
+import '@setaria-ui-plus/components/checkbox/style'

@@ -1,4 +1,4 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/color-picker.scss'
-import '@element-plus/components/input/style'
-import '@element-plus/components/button/style'
+import '@setaria-ui-plus/components/base/style'
+import '@setaria-ui-plus/theme-chalk/src/color-picker.scss'
+import '@setaria-ui-plus/components/input/style'
+import '@setaria-ui-plus/components/button/style'

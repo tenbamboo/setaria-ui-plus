@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/input-number.scss'
-import '@element-plus/components/input/style'
+import '@setaria-ui-plus/components/base/style'
+import '@setaria-ui-plus/theme-chalk/src/input-number.scss'
+import '@setaria-ui-plus/components/input/style'

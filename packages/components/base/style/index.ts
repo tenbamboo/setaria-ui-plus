@@ -1,1 +1,1 @@
-import '@element-plus/theme-chalk/src/base.scss'
+import '@setaria-ui-plus/theme-chalk/src/base.scss'
